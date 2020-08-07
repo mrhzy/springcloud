@@ -89,4 +89,10 @@ public class PaymentController {
     try { Thread.sleep(3000);} catch (InterruptedException e) {e.printStackTrace();}
     return serverPort;
   }
+
+  @GetMapping(value = "/payment/zipkin")
+  public String paymentZipkin() {
+
+    return "hi, I'm payment zipkin server fall back, welcome to here,o(∩_∩)o 哈哈~";
+  }
 }
